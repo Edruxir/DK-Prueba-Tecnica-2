@@ -62,7 +62,6 @@ En conjunto, el flujo RAG (indexación + recuperación por similitud y por Provi
 - **Filtros adicionales:** Permitir filtrar por rango de fechas, tema o tipo de sentencia en la consulta (usando metadatos en Pinecone) para acotar el contexto antes de llamar al LLM.
 - **Chunking:** Si las sentencias son muy largas, dividir síntesis o "resuelve" en fragmentos más pequeños y indexar cada chunk con referencia a la Providencia, mejorando la precisión de la recuperación para preguntas muy concretas.
 - **Evaluación:** Definir un conjunto de preguntas de prueba y métricas (recall de Providencias relevantes, satisfacción, ausencia de alucinaciones) para comparar cambios de modelo, de `top_k` o de prompt.
-- **Interfaz:** Sustituir o complementar el bucle por consola con una interfaz web (Streamlit, Gradio) o una API REST para uso por no técnicos.
 - **Coste y latencia:** Revisar uso de tokens (embedding + chat) y tamaño del contexto inyectado; valorar modelos más baratos o índices con embedding integrado si el volumen crece.
 - **Seguridad y auditoría:** Mantener las API keys en `.env` y fuera de control de versiones; documentar versiones de modelos y de índice para reproducibilidad y auditoría.
 
