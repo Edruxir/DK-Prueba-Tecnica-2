@@ -1,0 +1,18 @@
+# Notebook y entorno
+jupyter>=1.1.0
+
+# Datos
+pandas>=3.0
+openpyxl>=3.1
+numpy>=2.0
+
+# Embeddings y base vectorial
+openai>=1.0
+pinecone>=8.0
+
+# Configuración (claves en .env)
+python-dotenv>=1.0
+
+# API
+fastapi>=0.115
+uvicorn[standard]>=0.32
